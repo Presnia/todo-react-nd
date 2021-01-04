@@ -1,12 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "./EditFormContainer.css";
+import "./TodoListContainer.css"
 import App from "./App";
+import EditForm from "./EditFormContainer";
+import ListContainer from "./TodoListContainer";
 
-const element = (
+const todo = (
   <React.StrictMode>
-    <App />
+      <React.Fragment>
+          <App />
+          <EditForm />
+          <ListContainer />
+      </React.Fragment>
   </React.StrictMode>
 );
 
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(todo, document.getElementById("root"));
