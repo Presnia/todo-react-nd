@@ -1,4 +1,4 @@
-import './EditFormContainer.css';
+import './EditForm.css';
 
 function EditForm() {
     return (
