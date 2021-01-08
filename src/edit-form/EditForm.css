@@ -9,6 +9,11 @@
     color: rgb(168, 76, 255);
 }
 
+form {
+    display: block;
+    margin-bottom: 45px;
+}
+
 .form-row-left {
     margin-bottom: 10px;
 }
