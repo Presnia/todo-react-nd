@@ -2,7 +2,7 @@ import React from 'react';
 import './TodoList.css';
 import TodoItem from '../todo-item/TodoItem';
 
-function ListContainer() {
+function TodoList() {
     return (
         <div className="todo-list-container">
             <h2>ToDOs of mine</h2>
@@ -24,4 +24,4 @@ function ListContainer() {
     );
 }
 
-export default ListContainer;
+export default TodoList;
