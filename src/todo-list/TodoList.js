@@ -1,4 +1,6 @@
+import React from 'react';
 import './TodoList.css';
+import TodoItem from '../todo-item/TodoItem';
 
 function ListContainer() {
     return (
@@ -13,6 +15,10 @@ function ListContainer() {
             </div>
             <div id="todo-list" className="todo-list">
                 <div className="empty-list">Nothing to do</div>
+            </div>
+
+            <div className="item">
+                <TodoItem />
             </div>
         </div>
     );
