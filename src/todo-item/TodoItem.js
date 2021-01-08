@@ -6,7 +6,7 @@ import ControlBlock from "../control-block/ControlBlock";
 const TodoItem = () => (
     <div className="item">
             <Text text="Some text"/>
-        <InfoBlock TodoState="Task in progress" date="08.01.2020, 20:24"/>
+        <InfoBlock TodoState="Task in progress" />
         <ControlBlock />
     </div>
 );
