@@ -1,0 +1,27 @@
+#todo-list {
+    margin-bottom: 20px;
+}
+
+.item {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(222, 255, 222);
+}
+
+.item h3 {
+    padding: 10px;
+    font-weight: 300;
+    color: rgb(255, 38, 0);
+}
+
+.item > h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: large;
+    font-weight: 400;
+    color: darkcyan;
+}

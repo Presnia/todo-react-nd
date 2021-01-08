@@ -1,6 +1,7 @@
 import React from 'react';
 import './TodoList.css';
 import TodoItem from '../todo-item/TodoItem';
+import ListFilter from "../list-filter/ListFilter";
 
 function TodoList() {
     return (
@@ -10,14 +11,12 @@ function TodoList() {
                 <span id="total-counter-text">Total Todo Count: </span>
                 <span id="total-counter-number">0</span>
             </h2>
-            <div className="list-filter-container">
-                <a id="stat-link" href="#">Show statistics</a>
-            </div>
-            <div id="todo-list" className="todo-list">
+            <ListFilter />
+            <div className="todo-list">
                 <div className="empty-list">Nothing to do</div>
             </div>
 
-            <div className="item">
+            <div id="todo-list" className="todo-list">
                 <TodoItem />
             </div>
         </div>
