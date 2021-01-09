@@ -2,6 +2,9 @@ import React from 'react';
 import './TodoList.css';
 import TodoItem from '../todo-item/TodoItem';
 import ListFilter from "../list-filter/ListFilter";
+import TodoStorage from "../todo-storage/TodoStorage";
+
+const AllTodo = TodoStorage.map(() => (<TodoItem />));
 
 function TodoList() {
     return (
@@ -17,7 +20,7 @@ function TodoList() {
             </div>
 
             <div id="todo-list" className="todo-list">
-                <TodoItem />
+                { AllTodo }
             </div>
         </div>
     );
