@@ -1,12 +1,12 @@
 import './InfoBlock.css';
 
-const InfoBlock = ({ state }, { dateCreated }) => (
+const InfoBlock = ({ todo }) => (
     <div className="info-block">
         <p className="status-panel">
-            Task { state }
+            Task
         </p>
         <p className="created-date-panel">
-            Created: { dateCreated }
+            Created:
         </p>
     </div>
 );

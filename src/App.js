@@ -1,15 +1,13 @@
 import React from "react";
 import './App.css';
 import EditForm from "./edit-form/EditForm";
-import TodoList from "./todo-list/TodoList";
+import TodoPage from "./todo-page/TodoPage";
 
-function App() {
-  return (
-      <div className="App-container">
+const App = ({ allTodo }) => (
+    <div className="App-container">
         <EditForm />
-        <TodoList />
+        <TodoPage allTodo={ allTodo }/>
       </div>
-  );
-}
+);
 
 export default App;

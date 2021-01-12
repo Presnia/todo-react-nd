@@ -5,13 +5,13 @@
 
 .edit-form-container h2 {
     margin: 0 0 30px;
-    font-weight: 400;
+    font-weight: 500;
     color: rgb(168, 76, 255);
 }
 
 form {
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .form-row-left {
@@ -42,6 +42,7 @@ form {
     padding: 5px;
     border-radius: 20px;
     font-size: medium;
+    font-weight: bolder;
     border: none;
     color: #fff;
     cursor: pointer;

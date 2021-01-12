@@ -2,14 +2,11 @@ import './TodoItem.css';
 import Text from "../text/Text";
 import InfoBlock from "../info-block/InfoBlock";
 import ControlBlock from "../control-block/ControlBlock";
-import TodoStorage from "../todo-storage/TodoStorage";
 
-
-
-const TodoItem = ({ state }, { text }) => (
+const TodoItem = ({ todo }) => (
     <div className="item">
-        <Text text="Some text (for example)"/>
-        <InfoBlock state={ state } />
+        <Text text={ todo.text }/>
+        <InfoBlock state={ todo.state } />
         <ControlBlock />
     </div>
 );
