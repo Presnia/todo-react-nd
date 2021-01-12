@@ -75,7 +75,7 @@ const TodoStorage = [
         "dateCreated": "2021-01-06T14:00:14.584Z",
         "dateCompleted": null,
         "id": 11
-    }
+    },
 ];
 
 export default TodoStorage;
