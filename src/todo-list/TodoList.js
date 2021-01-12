@@ -5,7 +5,7 @@ import './TodoList.css'
 const TodoList = ({ allTodo }) =>
     <ul>
       { allTodo.map((todo) =>
-          <li key={todo.id}>
+          <li key={`li-${todo.id}`}>
               <TodoItem todo={todo}/>
           </li>) }
     </ul>;

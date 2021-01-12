@@ -4,7 +4,7 @@ import InfoBlock from "../info-block/InfoBlock";
 import ControlBlock from "../control-block/ControlBlock";
 
 const TodoItem = ({ todo }) => (
-    <div className="item">
+    <div className="item" key={todo.id}>
         <Text text={ todo.text }/>
         <InfoBlock state={ todo.state } />
         <ControlBlock />
