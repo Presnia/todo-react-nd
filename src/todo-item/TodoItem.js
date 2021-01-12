@@ -6,7 +6,7 @@ import ControlBlock from "../control-block/ControlBlock";
 const TodoItem = ({ todo }) => (
     <div className="item" key={todo.id}>
         <Text text={ todo.text }/>
-        <InfoBlock state={ todo.state } date={ todo.dateCreated }/>
+        <InfoBlock state={ todo.state } dateCreated={ todo.dateCreated } dateCompleted={ todo.dateCompleted }/>
         <ControlBlock />
     </div>
 );

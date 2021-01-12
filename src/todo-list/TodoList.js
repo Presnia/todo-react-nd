@@ -7,7 +7,7 @@ const TodoList = ({ allTodo }) =>
       { allTodo.map((todo) =>
           <li key={`li-${todo.id}`}>
               <TodoItem todo={todo}/>
-          </li>) }
+          </li>).reverse() }
     </ul>;
 
 export default TodoList;
