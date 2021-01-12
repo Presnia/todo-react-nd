@@ -2,7 +2,6 @@ import React from 'react';
 import './TodoPage.css';
 import TodoList from "../todo-list/TodoList";
 import ListFilter from "../list-filter/ListFilter";
-import TodoStorage from "../todo-storage/TodoStorage";
 
 function TodoPage({ allTodo }) {
     return (

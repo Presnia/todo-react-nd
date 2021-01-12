@@ -4,7 +4,21 @@
     padding-right: 10px;
     font-size: 14px;
     font-weight: 500;
-    color: rgb(156, 156, 156);
+    color: rgb(149, 149, 149);
+}
+
+.status-panel p {
+    display: flex;
+
+}
+
+.status-panel dt {
+    max-width: 50px;
+}
+
+.status-panel dd {
+    margin-left: 10px;
+    color: #6fc4fc;
 }
 
 .status-panel {
@@ -14,6 +28,14 @@
 .created-date-panel {
     flex-grow: 1;
     text-align: right;
+}
+
+.created-date-panel dt {
+    margin-right: 115px;
+}
+
+.created-date-panel dd {
+    color: #6fc4fc;
 }
 
 .done-date-panel {
