@@ -2,7 +2,6 @@ import React from "react";
 import './App.css';
 import EditForm from "./edit-form/EditForm";
 import TodoPage from "./todo-page/TodoPage";
-import TodoForm from "./edit-form/TodoForm";
 
 class App extends React.Component {
     constructor(props) {
@@ -23,9 +22,7 @@ class App extends React.Component {
       const {todos} = this.state;
       return (
           <div className="App-container">
-              <EditForm>
-                  <TodoForm onCreateTodo={this.handleCreateTodo} />
-              </EditForm>
+              <EditForm onCreateTodo={this.handleCreateTodo} />
               <TodoPage allTodo={todos} />
           </div>
       );
