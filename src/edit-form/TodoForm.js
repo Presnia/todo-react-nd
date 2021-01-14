@@ -10,14 +10,20 @@ class TodoForm extends React.Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleClear = this.handleClear.bind(this);
     }
 
     handleChange(event) {
         this.setState({ todoDescription: event.target.value});
     }
 
+    handleClear(event) {
+        this.setState({ todoDescription: "" });
+    }
+
     handleSubmit(event) {
         event.preventDefault();
+        this.setState({ todoDescription: "" });
         const newId = 11 + this.count++;
 
         const todo = {
@@ -39,7 +45,7 @@ class TodoForm extends React.Component {
                 </div>
                 <div className="form-row-right">
                     <input id="add-todo-button" type="submit" value="Add"/>
-                    <input id="clear-form-button" type="button" value="Clear"/>
+                    <input id="clear-form-button" type="button" value="Clear" onClick={this.handleClear}/>
                 </div>
             </form>
         );
