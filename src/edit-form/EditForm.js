@@ -1,5 +1,5 @@
 import './EditForm.css';
-import TodoForm from "./TodoForm";
+import TodoForm from "../todo-form/TodoForm";
 import React from "react";
 
 function EditForm(props) {
