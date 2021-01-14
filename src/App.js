@@ -3,7 +3,7 @@ import './App.css';
 import EditForm from "./edit-form/EditForm";
 import TodoPage from "./todo-page/TodoPage";
 
-class App extends React.Component {
+class TodoApp extends React.Component {
     constructor(props) {
         super(props);
 
@@ -29,4 +29,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default TodoApp;

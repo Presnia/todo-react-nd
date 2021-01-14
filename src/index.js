@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import TodoStorage from "./todo-storage/TodoStorage";
+import TodoApp from "./App";
 
 ReactDOM.render(
     <React.StrictMode>
-        <App allTodo={ TodoStorage }/>
+        <TodoApp allTodo={ TodoStorage }/>
     </React.StrictMode>,
     document.getElementById("root")
 );
