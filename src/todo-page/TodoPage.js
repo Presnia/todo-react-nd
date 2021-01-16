@@ -4,7 +4,13 @@ import TodoList from "../todo-list/TodoList";
 import ListFilter from "../list-filter/ListFilter";
 
 function TodoPage({ allTodo }) {
-    const allTodoCount= allTodo.length;
+    const allTodoCount = allTodo.length;
+
+    const EmptyList = ({ allTodoCount }) =>
+      allTodoCount === null ? (
+        <div className="empty-list">Nothing to do</div>
+      ) : null;
+
     return (
         <div className="todo-list-container">
             <h2>ToDOs of mine</h2>
@@ -16,7 +22,7 @@ function TodoPage({ allTodo }) {
             <ListFilter />
 
             <div className="todo-list">
-                <div className="empty-list">Nothing to do</div>
+                <EmptyList />
                 <TodoList allTodo={ allTodo } />
             </div>
         </div>

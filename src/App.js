@@ -15,7 +15,6 @@ class TodoApp extends React.Component {
     handleCreateTodo(todo) {
         const newTodos = [...this.state.todos, todo];
         this.setState({ todos: newTodos });
-        // console.log(`Handle create todo ${todo}`)
     }
 
     render() {
