@@ -1,31 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import './App.css';
 import EditForm from "./edit-form/EditForm";
 import TodoPage from "./todo-page/TodoPage";
 
-class TodoApp extends React.Component {
-    constructor(props) {
-        super(props);
+const TodoApp = (props) => {
+  const [allTodo, setAllTodo] = useState(props.allTodo);
 
-        this.state = { todos: props.allTodo };
+  const handleCreateTodo = (todo) => {
+    const newTodo = [...allTodo, todo];
+    setAllTodo(newTodo);
+  };
 
-        this.handleCreateTodo = this.handleCreateTodo.bind(this);
-    }
-
-    handleCreateTodo(todo) {
-        const newTodos = [...this.state.todos, todo];
-        this.setState({ todos: newTodos });
-    }
-
-    render() {
-      const {todos} = this.state;
-      return (
-          <div className="App-container">
-              <EditForm onCreateTodo={this.handleCreateTodo} />
-              <TodoPage allTodo={todos} />
-          </div>
-      );
-  }
+  return (
+    <div className="App-container">
+      <EditForm onCreateTodo={handleCreateTodo} />
+      <TodoPage allTodo={allTodo} />
+    </div>
+  );
 }
 
 export default TodoApp;
