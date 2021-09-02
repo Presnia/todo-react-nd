@@ -69,3 +69,8 @@ form {
     background-color: rgb(190, 230, 255);
     transition: color 0.3s;
 }
+
+#add-todo-button:active,
+#clear-form-button:active {
+    transform: scale(0.97);
+}

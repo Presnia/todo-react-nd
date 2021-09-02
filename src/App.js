@@ -3,8 +3,8 @@ import './App.css';
 import EditForm from "./edit-form/EditForm";
 import TodoPage from "./todo-page/TodoPage";
 
-const TodoApp = (props) => {
-  const [allTodo, setAllTodo] = useState(props.allTodo);
+const TodoApp = ({allTodos}) => {
+  const [allTodo, setAllTodo] = useState(allTodos);
 
   const handleCreateTodo = (todo) => {
     const newTodo = [...allTodo, todo];

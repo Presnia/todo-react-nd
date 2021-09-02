@@ -6,7 +6,7 @@ import TodoApp from "./App";
 
 ReactDOM.render(
     <React.StrictMode>
-        <TodoApp allTodo={ TodoStorage }/>
+        <TodoApp allTodos={ TodoStorage }/>
     </React.StrictMode>,
     document.getElementById("root")
 );
